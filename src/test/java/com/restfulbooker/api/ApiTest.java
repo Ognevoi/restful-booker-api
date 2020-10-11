@@ -4,6 +4,7 @@ import com.restfulbooker.api.payload.AuthApi;
 import com.restfulbooker.api.api.Bookings;
 import com.restfulbooker.api.api.NewBooking;
 import com.restfulbooker.api.api.templates.*;
+
 import io.restassured.RestAssured;
 import io.restassured.config.RestAssuredConfig;
 import io.restassured.response.Response;
@@ -58,7 +59,7 @@ public class ApiTest {
     }
 
     @Test
-    public void deleteRandomBookingReturn200() {
+    public void deleteRandomBookingReturn201() {
         int initialBookings = Bookings.totalNumberOfBookings();
         DeleteApi.sendDelete(Bookings.randomBookingId(), 201);
         int currentBookings = Bookings.totalNumberOfBookings();
