@@ -8,4 +8,8 @@ Restful-booker Api Docs could be found [here](https://restful-booker.herokuapp.c
 - Maven 3.6.1
 
 ## Running Tests
-```mvn test```
+```mvn clean test```
+
+## Allure report
+```mvn allure:serve```
+
